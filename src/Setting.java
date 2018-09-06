@@ -1,15 +1,13 @@
 
 public enum Setting {
-	OFF (0, "Off"),
-	LOW (1, "Low"),
-	MEDIUM (2, "Medium"),
-	HIGH (3, "High");
-	private int value;
+	OFF ("---"),
+	LOW ("--+"),
+	MEDIUM ("-++"),
+	HIGH ("+++");
 	private String setting;
 	
 
-	private Setting(int value, String setting) {
-		this.value = value;
+	private Setting(String setting) {
 		this.setting = setting;
 	}
 

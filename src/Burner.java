@@ -58,6 +58,8 @@ public class Burner {
 				case BLAZING:
 					turnDownTemp();
 					break;
+				default:
+					break;
 				}
 			case MEDIUM:
 				switch(myTemperature) {
@@ -68,28 +70,48 @@ public class Burner {
 				case BLAZING:
 					turnDownTemp();
 					break;
+				default: 
+					break;
 				}
 			case  HIGH:
 				turnUpTemp();
+				break;
 			}
 		}else {
 			timer--;
 		}
 	}
 	private void turnUpTemp() {
-		// TODO Auto-generated method stub
-		
-	}
-	private void turnDownTemp() {
-		// TODO Auto-generated method stub
-		
-	}
-				}
-			}
+		switch(myTemperature) {
+		case COLD: 
+			myTemperature = Temperature.WARM;
+			break;
+		case WARM: 
+			myTemperature = Temperature.HOT;
+			break;
+		case HOT:
+			myTemperature = Temperature.BLAZING;
+			break;
+		default:
+			break;
 		}
-		
 	}
 	
+	private void turnDownTemp() {
+		switch(myTemperature) {
+		case BLAZING: 
+			myTemperature = Temperature.HOT;
+			break;
+		case HOT:
+			myTemperature = Temperature.WARM;
+			break;
+		case WARM: 
+			myTemperature = Temperature.COLD;
+			break;
+		default:
+			break;
+		}	
+	}
 	
 	
 	
