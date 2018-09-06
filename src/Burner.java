@@ -61,6 +61,7 @@ public class Burner {
 				default:
 					break;
 				}
+				break;
 			case MEDIUM:
 				switch(myTemperature) {
 				case COLD:
@@ -73,6 +74,7 @@ public class Burner {
 				default: 
 					break;
 				}
+				break;
 			case  HIGH:
 				turnUpTemp();
 				break;
@@ -111,6 +113,10 @@ public class Burner {
 		default:
 			break;
 		}	
+	}
+	@Override
+	public String toString() {
+		return mySetting.toString() + " " + myTemperature;
 	}
 	
 	
