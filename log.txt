@@ -1,0 +1,41 @@
+commit 18868437f0b53cea0c019558a32430e57427dc82
+Author: Josh Schoep <joshuaschoep@mymail.mines.edu>
+Date:   Wed Sep 12 23:44:39 2018 -0600
+
+    Removed debugging output line
+
+commit b76c87cf0b9dbd648a861f672f0b180f3e7ae0f7
+Author: Josh Schoep <joshuaschoep@mymail.mines.edu>
+Date:   Wed Sep 12 23:42:08 2018 -0600
+
+    Repaired updateTemperature class for Burner, added red light warning for Stove, and added comments for Javadoc
+
+commit 4de24ac95e719f121e6d11d0920d4de56657476f
+Author: Joshua Schoep <joshuaschoep@mines.edu>
+Date:   Thu Sep 6 12:18:06 2018 -0600
+
+    Added toString method to Burner and wrote displayStove function
+
+commit 650a7fba9f19a1ae9b35dd74e9890736cac8336a
+Author: Joshua Schoep <joshuaschoep@mines.edu>
+Date:   Thu Sep 6 12:09:13 2018 -0600
+
+    Added private functions turnUpTemp and turnDownTemp
+
+commit 0953aa0bd11d400f2ca10ab2bd076ff384a861b6
+Author: Joshua Schoep <joshuaschoep@mines.edu>
+Date:   Thu Sep 6 12:00:55 2018 -0600
+
+    Added plusButton, minusButton, updateTemperature
+
+commit 6e57daa64451ff86fd33697d0598117e1cc98a7c
+Author: Joshua Schoep <joshuaschoep@mines.edu>
+Date:   Thu Sep 6 11:35:46 2018 -0600
+
+    Added burner class with enumerations, and setting enum with toString
+
+commit c0d2e340d4d8b094558532fc5d38d119e1d359fd
+Author: Joshua Schoep <joshuaschoep@mines.edu>
+Date:   Thu Sep 6 11:13:40 2018 -0600
+
+    Initial copy
