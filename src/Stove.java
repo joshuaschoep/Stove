@@ -25,7 +25,13 @@ public class Stove {
 	 */
 	public void displayStove() {
 		for (int i = 0; i < burners.size(); i++) {
-			System.out.println(burners.get(i));
+			burners.get(i).display();
+		}
+		for(int i = 0; i < burners.size(); i++) {
+			if(burners.get(i).getMyTemperature() == Burner.Temperature.BLAZING) {
+				System.out.println("RED LIGHT - HOT BURNER ALERT");
+				break;
+			}
 		}
 	}
 	
