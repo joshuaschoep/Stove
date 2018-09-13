@@ -155,7 +155,7 @@ public class Burner {
 	 * Prints stove setting and temperature properly to console
 	 */
 	public void display() {
-		System.out.println(mySetting + "....." + myTemperature + " " + timer);
+		System.out.println(mySetting + "....." + myTemperature);
 	}
 	
 	public Temperature getMyTemperature() {
